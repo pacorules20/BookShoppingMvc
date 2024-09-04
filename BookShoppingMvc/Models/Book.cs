@@ -12,6 +12,9 @@ namespace BookShoppingMvc.Models
         [Required]
         [MaxLength(40)]
 
-        public string BookName { get; set; }
+        public String? BookName { get; set; }
+        [Required]
+        public int GenreId { get; set; }
+        public Genre Genre;
     }
 }
